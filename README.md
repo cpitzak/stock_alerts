@@ -27,3 +27,26 @@ To do this you create your *calculation python file* following the rules in **Ad
     1. You'll see that the tickers are surrounded by []
     2. You'll see **alerts:** what comes after this is the python file names (separated by commas) of the calculation you created
 3. Create a section for your ticker and either use the calcuation you created or use the calculations I created
+
+# Example Ouput:
+<pre>
+2019-04-01 17:37:33,539 INFO Running COST with alerts: ['pe_ratio']
+2019-04-01 17:37:34,219 INFO FAILED pe_ratio message: COST: P/E ratio 31.35, expected P/E: 15.0
+2019-04-01 17:37:34,219 INFO Running USB with alerts: ['graham_number']
+2019-04-01 17:37:35,123 INFO FAILED graham_number message: USB Graham Number is $43.14, C: $49.07. H: $49.14, L: $48.3
+2019-04-01 17:37:35,123 INFO Running MCO with alerts: ['pe_ratio']
+2019-04-01 17:37:35,789 INFO FAILED pe_ratio message: MCO: P/E ratio 27.37, expected P/E: 15.0
+2019-04-01 17:37:35,789 INFO Running VRSN with alerts: ['peter_lynch_value']
+2019-04-01 17:37:36,707 INFO FAILED peter_lynch_value message: VRSN: Peter Lynch Value is $60.64, C: $185.96. H: $186.12, L: $182.11
+2019-04-01 17:37:36,707 INFO Running WFC with alerts: ['graham_number']
+2019-04-01 17:37:37,594 INFO PASSED graham_number message: WFC Graham Number is $52.25, C: $48.81. H: $48.9, L: $48.17
+2019-04-01 17:37:37,595 INFO Running BAC with alerts: ['price']
+2019-04-01 17:37:37,854 INFO FAILED price message: BAC Expected Price is $22.89, C: $28.54. H: $28.74, L: $27.85
+2019-04-01 17:37:37,854 INFO Running HD with alerts: ['pe_ratio', 'peter_lynch_value']
+2019-04-01 17:37:38,516 INFO FAILED pe_ratio message: HD: P/E ratio 22.21, expected P/E: 15.0
+2019-04-01 17:37:39,413 INFO FAILED peter_lynch_value message: HD: Peter Lynch Value is $134.53, C: $195.64. H: $195.9, L: $192.85
+2019-04-01 17:37:39,413 INFO Running JPM with alerts: ['graham_number']
+2019-04-01 17:37:40,324 INFO PASSED graham_number message: JPM Graham Number is $104.22, C: $104.64. H: $104.68, L: $102.12
+WFC Graham Number is $52.25, C: $48.81. H: $48.9, L: $48.17
+JPM Graham Number is $104.22, C: $104.64. H: $104.68, L: $102.12
+</pre>
