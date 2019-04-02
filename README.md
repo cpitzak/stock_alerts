@@ -29,6 +29,7 @@ To do this you create your *calculation python file* following the rules in **Ad
 3. Create a section for your ticker and either use the calcuation you created or use the calculations I created
 
 # Example Ouput:
+Note: The alerts.ini is just an example. These aren't values that I use or recommend. Personally, I'd want JPM and WFC to be 15% less than the graham number. You can update the graham_number.py calculator to do this or create another calculation python file for less_than_graham_number.
 <pre>
 2019-04-01 17:37:33,539 INFO Running COST with alerts: ['pe_ratio']
 2019-04-01 17:37:34,219 INFO FAILED pe_ratio message: COST: P/E ratio 31.35, expected P/E: 15.0
